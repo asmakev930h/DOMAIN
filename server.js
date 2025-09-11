@@ -4,7 +4,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 app.use('/', createProxyMiddleware({
-  target: 'https://api-ix-test.hf.space',
+  target: 'http://165.227.176.133:2137/',
   changeOrigin: true,
   secure: false
 }));
